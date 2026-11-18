@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>فصول السنه</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f3f6f8;
+      --text: #1d2a33;
+      --muted: #4b5b66;
+      --winter: #2f6f9f;
+      --spring: #3f8f5a;
+      --summer: #c9821a;
+      --autumn: #a8512f;
+      --card: #ffffff;
+      box-sizing: border-box;
+      padding-top: env(safe-area-inset-top, 0px);
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #14191d; --text: #e8eef2; --muted: #a7b4bc; --card: #1d252b;
+        --winter: #6fb3e0; --spring: #7cc794; --summer: #e8b45a; --autumn: #e08a63;
+      }
+    }
+    :root[data-theme="dark"] {
+      --bg: #14191d; --text: #e8eef2; --muted: #a7b4bc; --card: #1d252b;
+      --winter: #6fb3e0; --spring: #7cc794; --summer: #e8b45a; --autumn: #e08a63;
+    }
+    * { box-sizing: border-box; }
+    html { color-scheme: light dark; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Tajawal", "Segoe UI", Tahoma, sans-serif;
+      line-height: 1.8;
+    }
+    main { max-width: 640px; margin: 0 auto; padding: 32px 20px 48px; }
+    .title { font-size: 2rem; font-weight: 800; margin: 0 0 24px; }
+    .season {
+      background: var(--card);
+      border-inline-start: 6px solid var(--c);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 16px;
+    }
+    .season h1 { margin: 0 0 4px; font-size: 1.6rem; font-weight: 800; color: var(--c); }
+    .season h2 { margin: 0; font-size: 1.05rem; font-weight: 400; color: var(--muted); }
+    .winter { --c: var(--winter); }
+    .spring { --c: var(--spring); }
+    .summer { --c: var(--summer); }
+    .autumn { --c: var(--autumn); }
+    footer { margin-top: 32px; text-align: center; color: var(--muted); font-size: .95rem; }
+    footer h4 { margin: 0; font-weight: 500; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="title">فصول السنه</p>
+
+    <section class="season winter">
+      <h1>الشتاء</h1>
+      <h2>الشتاء جميل اسطوري لا يعلى عليه</h2>
+    </section>
+
+    <section class="season spring">
+      <h1>الربيع</h1>
+      <h2>زنخ بس حلو عشان الورد و الطبيعه</h2>
+    </section>
+
+    <section class="season summer">
+      <h1>الصيف</h1>
+      <h2>مقرف محد يحبه فيه ذبان و ناموس مقرف</h2>
+    </section>
+
+    <section class="season autumn">
+      <h1>الخريف</h1>
+      <h2>رايق هيج حلو يعني خفيف لطيف فيه برد خفيف رائع</h2>
+    </section>
+
+    <footer>
+      <h4>حقوق زين الدين</h4>
+    </footer>
+  </main>
+</body>
+</html>
